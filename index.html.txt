@@ -1,0 +1,156 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora Refacciones Modernas</title>
+    <style>
+        :root {
+            --primary: #0A2540;
+            --accent: #F26522;
+            --light-bg: #F8F9FA;
+            --text: #333333;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: var(--text); background-color: var(--light-bg); line-height: 1.6; }
+        
+        header { background-color: var(--primary); color: white; text-align: center; padding: 2.5rem 1rem; }
+        header h1 { font-size: 2.2rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; }
+        header p { font-size: 1.1rem; color: #E0E0E0; }
+        
+        .tagline { background-color: var(--accent); color: white; text-align: center; padding: 0.75rem; font-weight: bold; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+        
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
+        .feature-card { background: white; padding: 1.2rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); font-weight: bold; border-left: 4px solid var(--accent); }
+        
+        h2 { text-align: center; color: var(--primary); margin: 2rem 0 1.5rem; font-size: 1.8rem; }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .service-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .service-card h3 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem; }
+        
+        /* Galería Interactiva */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .gallery-item { overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); background: white; }
+        .gallery-item img { width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease; cursor: pointer; display: block; }
+        .gallery-item img:hover { transform: scale(1.05); }
+
+        /* Formulario de Contacto */
+        .contact-container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); max-width: 600px; margin: 0 auto; }
+        .form-group { margin-bottom: 1.2rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: bold; color: var(--primary); }
+        .form-group input, .form-group textarea { width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+        .form-group textarea { resize: vertical; height: 120px; }
+        .btn-submit { background-color: var(--primary); color: white; border: none; padding: 0.9rem 2rem; border-radius: 5px; cursor: pointer; font-size: 1rem; font-weight: bold; width: 100%; transition: background 0.3s; }
+        .btn-submit:hover { background-color: var(--accent); }
+
+        /* CTA WhatsApp & Instagram */
+        .cta-section { text-align: center; margin: 2rem 0; }
+        .btn-whatsapp { display: inline-block; background-color: #25D366; color: white; text-decoration: none; padding: 0.8rem 1.8rem; border-radius: 50px; font-weight: bold; font-size: 1.1rem; margin: 0.5rem; }
+        .btn-instagram { display: inline-block; background-color: #E1306C; color: white; text-decoration: none; padding: 0.8rem 1.8rem; border-radius: 50px; font-weight: bold; font-size: 1.1rem; margin: 0.5rem; }
+        
+        footer { background-color: var(--primary); color: white; text-align: center; padding: 1.5rem; font-size: 0.9rem; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Constructora Refacciones Modernas</h1>
+        <p>Soluciones que transforman tu hogar</p>
+    </header>
+
+    <div class="tagline">
+        CALIDAD • CONFIANZA • RESULTADOS
+    </div>
+
+    <div class="container">
+        
+        <div class="features">
+            <div class="feature-card">Trabajo Profesional e Integral</div>
+            <div class="feature-card">Cumplimiento en Tiempo y Forma</div>
+            <div class="feature-card">Presupuestos Sin Cargo</div>
+        </div>
+
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Pintor Interior y Exterior</h3>
+                <p>Aplicación técnica con materiales nuevos e innovadores.</p>
+            </div>
+            <div class="service-card">
+                <h3>Techista Oficial</h3>
+                <p>Solución efectiva a filtraciones de agua y humedad.</p>
+            </div>
+            <div class="service-card">
+                <h3>Colocación de Revestimientos</h3>
+                <p>Cerámica, porcelanato, pisos flotantes y más.</p>
+            </div>
+            <div class="service-card">
+                <h3>Durlock</h3>
+                <p>Instalación de tabiques, cielorrasos y revestimientos.</p>
+            </div>
+            <div class="service-card">
+                <h3>Plomería / Fontanería</h3>
+                <p>Instalaciones, reparaciones de cañerías, desagües y sanitarios.</p>
+            </div>
+            <div class="service-card">
+                <h3>Gasista Matriculado</h3>
+                <p>Instalaciones, reparaciones, habilitaciones, calefactores y termotanques.</p>
+            </div>
+            <div class="service-card">
+                <h3>Pérgolas y Quinchos</h3>
+                <p>Construcción a medida con materiales de alta durabilidad.</p>
+            </div>
+            <div class="service-card">
+                <h3>Trabajos en Altura</h3>
+                <p>Trabajos con silleta garantizando la máxima seguridad.</p>
+            </div>
+            <div class="service-card">
+                <h3>Diseño Interior y Exterior</h3>
+                <p>Asesoramiento personalizado para renovar tus espacios.</p>
+            </div>
+        </div>
+
+        <h2>Trabajos y Galería</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="1.png" alt="Refacciones Modernas Poster"></div>
+            <div class="gallery-item"><img src="Aviso Mayo 25.png" alt="Trabajo Garantizado"></div>
+            <div class="gallery-item"><img src="May 21 (2).png" alt="Soluciones para el hogar"></div>
+            <div class="gallery-item"><img src="May 21 (3).png" alt="Renovamos tu espacio"></div>
+            <div class="gallery-item"><img src="May 21.png" alt="Trabajos Garantizados"></div>
+            <div class="gallery-item"><img src="Mayo 23.png" alt="Constructora Refacciones"></div>
+        </div>
+
+        <h2>Solicite su Presupuesto sin Cargo</h2>
+        <div class="contact-container">
+            <form action="https://formsubmit.co/mgfulleri@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre y Apellido</label>
+                    <input type="text" id="name" name="name" required placeholder="Ej: Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono / WhatsApp</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Ej: 11 1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="message">Detalle de la consulta o trabajo</label>
+                    <textarea id="message" name="message" required placeholder="Escriba aquí los detalles de la obra o reparación..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Consulta</button>
+            </form>
+        </div>
+
+        <div class="cta-section">
+            <a href="https://wa.me/5491154905278" class="btn-whatsapp" target="_blank">Contactar por WhatsApp: 11 5490-5278</a>
+            <a href="https://instagram.com/dattilo.nicolas" class="btn-instagram" target="_blank">Instagram: @dattilo.nicolas</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; Refacciones Modernas - Renovamos tu espacio, mejoramos tu vida.</p>
+    </footer>
+
+</body>
+</html>
